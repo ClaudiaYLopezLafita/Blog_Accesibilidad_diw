@@ -26,6 +26,9 @@ function darkMode() {
         document.getElementById('fondoSidebar').classList.add('fondo2');
         document.getElementById('logo').removeAttribute('src');
         document.getElementById('logo').setAttribute('src','./assets/images/logoHeaderDark.svg')
+        document.querySelectorAll('.link-dark').forEach((element) => {
+            element.className = element.className.replace(/-dark/g, '-light');
+            });
     }
 
     document.querySelectorAll('.bg-light').forEach((element) => {
@@ -73,6 +76,10 @@ function lightMode() {
         //cambio de logo
         document.getElementById('logo').removeAttribute('src');
         document.getElementById('logo').setAttribute('src','./assets/images/logoHeader.svg')
+        //cambio de color link
+        document.querySelectorAll('.link-light').forEach((element) => {
+            element.className = element.className.replace(/-light/g, '-dark');
+            });
     }
 
     document.querySelectorAll('.bg-dark').forEach((element) => {
