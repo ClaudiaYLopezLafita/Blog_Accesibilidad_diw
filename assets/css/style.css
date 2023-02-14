@@ -295,7 +295,7 @@ nav img{
 .card img{height: 158.3px;}
 
 .card .btn, .btn-cancel, .btn-login-nav{
-    background-color: #FF1616;
+    background-color: #C41010;
     color: #ffff;
     font-weight: bold;
 }
@@ -319,7 +319,7 @@ nav img{
 
 .card .btn:hover,
 .card .btn:focus{ 
-    background-color: #C41010;
+    background-color: #FF1616;
     color: #ffffff;
 }
 
