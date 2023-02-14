@@ -282,6 +282,9 @@ nav img{
     margin-bottom: 1%;
 }
 
+.card a{
+    color: #000;
+}
 .card h5, h3, h2{
     font-family: 'Racing Sans One', cursive;
 }
