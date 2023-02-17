@@ -73,22 +73,25 @@
     <!-- START BODY INDEX -->
     <div class="container-fluid px-0">
         <!-- START NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-light navbar-light border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" aria-label="Menu navegacion">
             <div class="container-fluid">
+                <!-- logo page-->
                 <a class="navbar-brand navbar-logo" href="index.html">
-                    <img id="logo" src="./assets/images/logoHeader.svg" alt="Avatar Logo"> 
+                    <img id="logo" src="./assets/images/logoHeader.svg" alt="imperialLogo"> 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!--menu navbar-->
                 <div class="row collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="col-md-5 px-0"> <!--col-md-5 -->
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- option menu-->
+                    <div class="col-sm-5 px-0">
+                        <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link fw-bold" aria-current="page" href="#">Home</a>
+                                <a class="nav-link fw-bold fs-6" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fw-bold" aria-current="page" href="index.html">Entradas</a>
+                                <a class="nav-link fw-bold" aria-current="page" href="#">Entradas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fw-bold" aria-current="page" href="#">Categorias</a>
@@ -97,7 +100,9 @@
                                 <a class="nav-link fw-bold" aria-current="page" href="#">Sobre Nosotros</a>
                             </li>
                         </ul>
+                        
                     </div>
+                    <!-- button option-->
                     <div class="col-md row">
                         <div class="btns-nav d-flex justify-content-around px-0">
                             <div class="btn-Add rounded-pill px-2">
@@ -111,35 +116,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md collapse-search">
-                        <i class="bi bi-search mt-1" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" role="img"></i>
-                        <div class="collapse collapse-horizontal" id="collapseWidthExample" >
+                    <!-- collapse search-->
+                    <div class="col-md collapse-search" aria-current="page">
+                        <i class="bi bi-search mt-1" title="icon_search" data-bs-toggle="collapse" data-bs-target="#collapse_search" aria-expanded="false" aria-controls="collapse_search" role="img"></i>
+                        <div class="collapse collapse-horizontal" id="collapse_search" >
                             <input class="form-control-sm rounded-pill" type="search" placeholder="Buscar" aria-label="Buscar">
-                            <button type="button" class="btn-close m-0 mt-1" aria-label="Cerrar" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></button>
+                            <button type="button" class="btn-close m-0 mt-1" aria-label="Cerrar" data-bs-toggle="collapse" data-bs-target="#collapse_search" aria-expanded="false" aria-controls="collapse_search"></button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- LIGHT SWITCH -->
             <div class="d-flex">
                 <div class="form-check form-switch ms-auto mt-3 me-3">
-                    <label class="form-check-label ms-3" for="lightSwitch">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="25"
-                        height="25"
-                        fill="currentColor"
-                        class="bi bi-brightness-high fw-bold"
-                        viewBox="0 0 16 16"
-                    >
-                        <path
-                        d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-                        />
-                    </svg>
-                    </label>
-                    <input class="form-check-input" type="checkbox" id="lightSwitch"/>
+                    <label class="form-check-label ms-3" for="lightSwitch"><i class="bi bi-brightness-high" role="img" aria-label="brightness"></i></label>
+                    <input class="form-check-input" type="checkbox" name="lightSwitch" id="lightSwitch"/>
                 </div>
             </div>
-            <!-- LIGHT SWITCH -->
         </nav>
         <!--breadcrum-->
         <nav id="breadcrumb" class="bread" aria-label="breadcrumb">
@@ -151,11 +144,11 @@
         <!-- END NAVBAR -->    
         <!-- START MAIN -->
         <div class="container-fluid" id="main">
-            <div class="row justify-content-center gx-4">
+            <div class="row justify-content-center gx-4" aria-label="SeccionPrincipal">
                 <!-- START PRINCIPAL-->
-                <section class="col-lg-8 py-3 px-3">
+                <div class="col-lg-8 py-3 px-3">
                     <!--form register-->
-                    <div class="registro row py-3 px-3" id="fondoMain">
+                    <div class="registro row py-3 px-3" id="fondoMain" aria-label="Formualario Registro">
                         <h2 class="align-content-center mb-0 title-registro">REGISTRO</h2>
                         <div class="divider align-items-center my-0">
                             <p class="text-center text-danger fw-bold mx-3 mb-0">-------------------</p>
@@ -294,31 +287,32 @@
                             </div>
                         </form>
                     </div>
-                </section>
+                </div>
                 <!-- END PRINCIPAL -->
                 <!-- START SIDEBAR -->
-                <aside class="col-s-2  py-3 justify-content-center">
-                    <div class="container-fluid p-0" id="fondoSidebar">
-                        <div class="sidebar row justify-content-center mx-3">
-                            <!--side social net-->
-                            <div class="social-net row bg-light m-3 pb-3">
+                <div class="col-s-2 py-3 justify-content-center" >
+                    <div class="fondo container-fluid p-0" id="fondoSidebar">
+                        <div class="sidebar row justify-content-center mx-3" tabindex="0" aria-label="Sección principal sidebar">
+                            <!--social net-->
+                            <div class="social-net row bg-light m-3 pb-3" tabindex="0" aria-label="Sección Redes Sociales">
                                 <p class="mb-0 mt-2">Redes Sociales</p>
                                 <hr class="mt-0">
                                 <div class="col-sm-3">
-                                    <button class="btn mb-2"><i class="bi bi-social bi-facebook"></i></button>
-                                    <button class="btn"><i class="bi bi-social bi-twitter"></i></button>
+                                    <a class="btn mb-2" href=""><i class="bi bi-social bi-facebook" role="img" aria-label="facebook"></i></a>
+                                    <a class="btn" href=""><i class="bi bi-social bi-twitter" role="img" aria-label="twitter"></i></a>
                                 </div>
                                 <div class="col-sm-3">
-                                    <button class="btn mb-2"><i class="bi bi-social bi-google"></i></button>
-                                    <button class="btn"><i class="bi  bi-social bi-pinterest"></i></button>
+                                    <a class="btn mb-2" href=""><i class="bi bi-social bi-google" role="img" aria-label="google"></i></a>
+                                    <a class="btn" href=""><i class="bi bi-social bi-pinterest" role="img" aria-label="pinterest"></i></a>
                                 </div>
                                 <div class="col-sm-3">
-                                    <button class="btn mb-2"><i class="bi bi-social bi-instagram"></i></button>
-                                    <button class="btn mb-2"><i class="bi bi-social bi-mastodon"></i></button>
+                                    <a class="btn mb-2" href=""><i class="bi bi-social bi-instagram" role="img" aria-label="instagram"></i></a>
+                                    <a class="btn mb-2" href=""><i class="bi bi-social bi-mastodon" role="img" aria-label="mastodon"></i></a>
+
                                 </div>
                             </div>
-                            <!-- side carousel-->
-                            <div class=" news-entry bg-light p-2">
+                            <!--carousel-->
+                            <div class="news-entry bg-light p-2" tabindex="0" aria-label="Sección carrusel nuevas entradas">
                                 <p class="mb-0 mt-2">Entradas Destacadas</p>
                                 <hr class="mt-0">
                                 <div class="carousel slide" data-bs-ride="carousel">
@@ -355,24 +349,26 @@
                                     </button>
                                 </div>
                             </div>
-                            <!--banner side-->
-                            <div class="banner m-3">
+                            <!-- banner-->
+                            <div class="banner m-3" tabindex="0" aria-label="Sección Banner">
                                 <img src="./assets/images/banner.png" alt="banner-descuento">
                             </div>
                         </div>
                     </div>
-                </aside>
+                </div>
                 <!-- END SIDEBAR -->
             </div>
         </div>
         <!-- END MAIN -->
         <!-- START FOOTER -->
-        <footer class="bg-light pt-4 pb-2">
-            <div class="row bg-light">
+        <footer class="bg-light pt-4 pb-2" tabindex="0" aria-label="Pie de página">
+            <div class="row bg-light" aria-label="Fila informacion">
                 <!-- localitacion-->
-                <div class="col-md-5 bg-light offset-sm-1 mb-3 pl-0">
+                <div class="col-md-5 bg-light offset-sm-1 mb-3 pl-0" aria-label="Localizacion">
                     <h5>Localizanos</h5>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12681.179418684065!2d-6.0584269!3d37.3828587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ca80e208bb71b4d!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20Alixar!5e0!3m2!1ses!2ses!4v1673958290706!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12681.179418684065!2d-6.0584269!3d37.3828587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ca80e208bb71b4d!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20Alixar!5e0!3m2!1ses!2ses!4v1673958290706!5m2!1ses!2ses" 
+                    width="400" height="300" style="border:0;" title="Location google map"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <!--sections-->
                 <div class="col-6 bg-light col-md-2 mb-3">
@@ -406,7 +402,7 @@
                 </div>
             </div>
             <!--licenses-->
-            <div class="bg-light d-flex flex-column flex-sm-row justify-content-center pt-3 pb-2 my-2 border-top">
+            <div class="bg-light d-flex flex-column flex-sm-row justify-content-center pt-3 pb-2 my-2 border-top" aria-label="Licencias">
                 <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/></a> 2023 Alixar, IES.</p>
             </div>
         </footer>
